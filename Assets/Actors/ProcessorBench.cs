@@ -1,7 +1,6 @@
 ﻿using Game.Source;
 using Pixeye.Actors;
 using UnityEngine;
-using Random = Pixeye.Actors.Random;
 
 namespace Pixeye.Source
 {
@@ -12,16 +11,7 @@ namespace Pixeye.Source
 
     protected override void OnAwake()
     {
-      var prefab = Box.Load<GameObject>("MonoPoint");
-
-      for (int i = 0, length = 100_000; i < length; i++)
-      {
-        var entity = Entity.Create(prefab);
-        ref var eBench = ref entity.Set<ComponentBench>();
-        eBench.transform = entity.transform;
-        eBench.position = new Vector3(Random.Range(-100f, 100f), Random.Range(-100f, 100f), Random.Range(-100f, 100f));
-        entity.transform.position = eBench.position;
-      }
+      LayerApp.CreateObjects(Layer);
     }
 
     public void Tick(float delta)

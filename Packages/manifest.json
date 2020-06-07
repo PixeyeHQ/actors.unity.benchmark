@@ -4,6 +4,7 @@
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.2.0",
+    "com.unity.memoryprofiler": "0.2.3-preview.2",
     "com.unity.test-framework": "1.1.14",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.2.10",
@@ -43,7 +44,7 @@
   "lock": {
     "com.pixeye.ecs": {
       "revision": "develop",
-      "hash": "9da59cccdd80f0989923e61af9fb0b7501d8bb33"
+      "hash": "343e2edd5cfe639340686744cbec9d7727e9b79d"
     }
   }
 }
