@@ -17,7 +17,7 @@ namespace Game.Source
     public const string Bench = "Game.Source.ComponentBench";
 
     public static ref ComponentBench ComponentBench(in this ent entity) =>
-      ref Storage<ComponentBench>.components[entity.id];
+      ref Storage<ComponentBench>.components[entity.byte1 | (entity.byte2 << 0x8) | (entity.byte3 << 0x10)];
   }
 
   sealed class StorageComponentBench : Storage<ComponentBench>
