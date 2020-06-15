@@ -31,7 +31,7 @@ public class LayerApp : Layer<LayerApp>
     STEPS = Convert.ToInt32(arg);
   }
 
-  public static void CreateObjects(LayerCore Layer)
+  public static void CreateObjects(Layer Layer)
   {
     var prefab = Box.Load<GameObject>("MonoPoint");
 

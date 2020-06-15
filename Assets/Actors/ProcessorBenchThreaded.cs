@@ -10,7 +10,7 @@ namespace Pixeye.Source
     static readonly Vector3 moveVector = Vector3.one;
     Group<ComponentBench> gBench = default;
 
-    protected override void OnAwake()
+    public ProcessorBenchThreaded()
     {
       gBench.MakeConcurrent(50000, Math.Min(Environment.ProcessorCount - 1, 8), HandleCalculation);
       LayerApp.CreateObjects(Layer);

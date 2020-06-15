@@ -9,7 +9,7 @@ namespace Pixeye.Source
     readonly Vector3 moveVector = Vector3.one;
     Group<ComponentBench> gBench = default;
 
-    protected override void OnAwake()
+    public ProcessorBench()
     {
       LayerApp.CreateObjects(Layer);
     }
